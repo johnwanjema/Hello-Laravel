@@ -12,7 +12,9 @@
     <body>
    <h1>projects</h1>
 
-
+@foreach($projects as $project)
+<li>{{$project->name}}</li>
+@endforeach
     </body>
 </html>
 
