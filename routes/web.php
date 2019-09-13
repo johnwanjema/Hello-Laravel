@@ -13,6 +13,10 @@
 
 Route::get('/projects', 'ProjectsController@index');
 
+Route::get('/project/create', 'ProjectsController@create');
+
+Route::post('/projects', 'ProjectsController@store');
+
 Route::get('/', function () {
     $tasks = [
         'code for ip',
