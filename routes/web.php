@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/projects', 'ProjectsController@index');
+
 Route::get('/', function () {
     $tasks = [
         'code for ip',
