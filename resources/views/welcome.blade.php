@@ -1,10 +1,10 @@
 @extends('layout')
 
 @section("content")
-<h1>qwertyu</h1>
+<h1>{{$foo}}qwertyu</h1>
 <ul>
-<?php foreach ($tasks as $task): ?>
-    <li><?=$task; ?></li>
-<?php endforeach; ?>
+@foreach ($tasks as $task)
+    <li>{{$task}}</li>
+@endforeach
 </ul>
 @endsection
