@@ -18,7 +18,8 @@ Route::get('/', function () {
         'learn php',
     ];
 
-    return view('welcome', ['tasks' => $tasks]);
+    return view('welcome', ['tasks' => $tasks, 'foo' => 'foobar',
+    ]);
 });
 
 Route::get('/contact', function () {
