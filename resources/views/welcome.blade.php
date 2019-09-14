@@ -3,8 +3,8 @@
 @section("content")
 <h1>{{$foo}}qwertyu</h1>
 <ul>
-@foreach ($tasks as $task)
+    @foreach ($tasks as $task)
     <li>{{$task}}</li>
-@endforeach
+    @endforeach
 </ul>
 @endsection

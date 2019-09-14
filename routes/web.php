@@ -11,11 +11,20 @@
 |
 */
 
-Route::get('/projects', 'ProjectsController@index');
+Route::resource('projects', 'ProjectsController');
+// Route::get('/projects', 'ProjectsController@index');
 
-Route::get('/project/create', 'ProjectsController@create');
+// Route::get('/project/create', 'ProjectsController@create');
 
-Route::post('/projects', 'ProjectsController@store');
+// Route::get('/projects{project}', 'ProjectsController@show');
+
+// Route::post('/projects', 'ProjectsController@store');
+
+// Route::get('/projects{project}/edit', 'ProjectsController@edit');
+
+// Route::patch('/projects{project}/edit', 'ProjectsController@update');
+
+// Route::delete('/projects{project}/edit', 'ProjectsController@delete');
 
 Route::get('/', function () {
     $tasks = [
