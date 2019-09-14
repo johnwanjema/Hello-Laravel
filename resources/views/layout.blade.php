@@ -18,6 +18,9 @@
             <a href="/" class="navbar-item">
                 Home
             </a>
+            <a href="/projects" class="navbar-item">
+                Projects
+            </a>
             <a href="/projects/create" class="navbar-item">
                 new project
             </a>
